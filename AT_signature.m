@@ -30,6 +30,13 @@
  *	OF SUCH DAMAGE. 
  */
 
+// BT 3.0 core project 2/2014 ATRAIN53
+// To use this plugin in your BT project:
+// 1) replace AT_signature with your BT custom plugin name
+// 2) update with nameofyourapp_appDelegate
+// 3) update the customclass of the .xib file with your BT custom plugin name
+
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "JSON.h"
