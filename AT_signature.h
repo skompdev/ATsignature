@@ -36,7 +36,7 @@
 #import "DisplaySignatureViewController.h"
 
 
-@interface AT_BlankScreenG : BT_viewController <UIAlertViewDelegate> {
+@interface AT_signature : BT_viewController <UIAlertViewDelegate> {
 	
 
 }

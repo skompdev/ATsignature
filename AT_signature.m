@@ -36,19 +36,19 @@
 #import "BT_application.h"
 #import "BT_strings.h"
 #import "BT_viewUtilities.h"
-#import "awstest_appDelegate.h"
+#import "BT_appDelegate.h"
 #import "BT_item.h"
 #import "BT_debugger.h"
 #import "BT_viewControllerManager.h"
-#import "AT_BlankScreenG.h"
+#import "AT_signature.h"
 #import <AudioToolbox/AudioToolbox.h>
 
 
-@interface AT_BlankScreenG ()
+@interface AT_signature ()
 
 @end
 
-@implementation AT_BlankScreenG
+@implementation AT_signature
 
 @synthesize mySignatureImage;
 @synthesize lastContactPoint1, lastContactPoint2, currentPoint;
@@ -105,7 +105,7 @@
 	[BT_debugger showIt:self theMessage:@"viewWillAppear"];
 	
 	//flag this as the current screen
-	awstest_appDelegate *appDelegate = (awstest_appDelegate *)[[UIApplication sharedApplication] delegate];	
+	BT_appDelegate *appDelegate = (BT_appDelegate *)[[UIApplication sharedApplication] delegate];	
 	appDelegate.rootApp.currentScreenData = self.screenData;
 	
 	//setup navigation bar and background
